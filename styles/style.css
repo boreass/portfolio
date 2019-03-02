@@ -1,0 +1,197 @@
+
+html, body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    margin-bottom: 80px;
+}
+li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#dos li {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.projects-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.social-img {
+    width: 50px;
+    height: 50px;
+}
+
+#inst {
+    margin-left: 1px;
+}
+
+#tw {
+    margin-left: 1px;
+}
+.social-imgd {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+footer {
+    position: fixed;
+    height: 80px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+a, #cara {
+    -webkit-filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+a:hover, #cara {
+    filter: none;
+    opacity: 1;
+}
+
+#cara {
+    -webkit-filter: grayscale(100%);
+    opacity: 0.8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#cara:hover {
+    filter: none;
+    opacity: 1;
+}
+
+#grid-main {
+    margin: 10vh auto;
+    display: grid;
+    grid-template-areas: "izq der";
+    grid-template-columns: 50% 50%;
+    width: 90vw;
+}
+
+#grid-main > nav {
+    grid-area: izq;
+}
+
+#grid-main > main {
+    grid-area: der;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 10vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#translate {
+    margin-bottom: -50px;
+
+}
+
+#grid-int {
+    display: grid;
+    grid-template-areas: "uno dos"
+                         "tres cuatro";
+}
+
+#grid-int > #uno {
+    grid-area: uno;
+    align-self: center;
+}
+
+#grid-int > #dos {
+    grid-area: dos;
+    align-self: center;
+    justify-self: start;
+    margin-top: 50px;
+}
+
+#grid-int > #tres {
+    grid-area: tres;
+    align-self: center;
+}
+
+#grid-int > #cuatro {
+    grid-area: cuatro;
+    align-self: center;
+    justify-self: start;
+    margin-top: 40px;
+}
+
+.papers:visited {
+    text-decoration-line: none;
+    color: black;
+}
+
+.papers:hover {
+    text-decoration-line: underline;
+    color: black;
+}
+
+.papers {
+    text-decoration-line: none;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        align: center;
+        margin: 0 auto;
+
+    }
+    
+    #grid-main {
+        display: grid;
+        grid-template-areas: "izq"
+                             "der";
+        width: 90vw;
+        margin: 100px 0 auto auto;
+        grid-row-gap: 40px;
+        margin: 100px 25vw;
+    }
+
+    footer {
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        background-color: white;
+    }
+
+    #grid-int {
+        display: grid;
+        grid-template-areas: "uno dos"
+                             "tres cuatro";
+    }
+
+    #translate {
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
